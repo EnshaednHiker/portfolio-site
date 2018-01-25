@@ -18,3 +18,9 @@ No errors in the console Hiring managers usually have a ton of applicants, which
 
 Reasonable load time We'll discuss how to achieve this, but the page should load quickly (i.e., 2 seconds or less).
 */
+
+// causeRepaintsOn = $("h1, h2, h3, p");
+
+// $(window).resize(function() {
+//   causeRepaintsOn.css("z-index", 1);
+// });
