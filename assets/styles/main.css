@@ -29,14 +29,16 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.karla-font{
-    font-family: 'Karla', sans-serif;
+.fjalla-one-font{
+    font-family: 'Fjalla One', sans-serif;
 }
 .montserrat-thin-font{
     font-family: 'Montserrat', sans-serif;
 }
 
-
+.courier-font {
+    font-family: courier;
+}
 
 /******************Navbar********************/
 
@@ -55,6 +57,36 @@ body {
     background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.0));
 }
 
+.text-shadow {
+    text-shadow: 1px 1px 1px black;
+}
+.brand {
+    text-decoration: dashed underline !important;
+    color: #cd853f!important;
+}
+.brand:link{
+
+}
+.brand:visited {
+    color: #cd853f!important;
+}
+.brand:hover {
+    color: #8b4513 !important;
+    text-decoration: underline !important;
+}
+.brand:focus {
+    color: #c0c0c0 !important;
+    text-decoration: underline !important;
+}
+
+
+.nav-link:hover {
+    font-size: 105% !important;
+}
+.nav-link:focus {
+    text-decoration: underline dashed !important; 
+    font-size: 105% !important;
+}
 
 /**************Color Pallette****************/
 .black-background {
