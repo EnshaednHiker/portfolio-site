@@ -65,6 +65,7 @@ $('#contact-link').click(function(e){
 $('#brand').click(function(){
     checkCheckbox();
     $('.nav-link').removeClass('nav-link-active');
+    $("html, body").animate({ scrollTop: 0 }, 600);
 });
 //Scroll listener which calculates when when to turn the navbar black right before scrolling past the header image 
 $(document).scroll(function(){
@@ -95,3 +96,18 @@ $(".luxbar-checkbox").click(function(){
     checkedClassHandling();
 });
 
+/************Typing Animation*************/
+var options = {
+    strings: [
+        "react redux",
+        "node mongoDB",
+        "webpack babel CI",
+        "IoT projects",
+        "gritty data wrangling",
+        "all the things"
+    ],
+    typeSpeed: 40,
+    showCursor: false
+  }
+  
+  var typed = new Typed("#typed-span", options);

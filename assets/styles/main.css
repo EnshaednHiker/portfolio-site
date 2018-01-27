@@ -19,7 +19,7 @@ html {
     }
 }
 h1 { 
-    font-size: 3.125em; 
+    font-size: 3em; 
 } 
 h2 { 
     font-size: 2.3125em;
@@ -78,15 +78,14 @@ body {
 }
 #nav-ul{
     margin: 0.5rem !important;
-    margin-bottom: 0.5rem !important;
-}
+} 
 #nav-header{
     margin-bottom: 0.5rem;
 }
 
 .luxbar-checkbox:checked, .luxbar-menu {
     overflow: hidden !important;
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.0)) !important;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.0)) !important;
     transition: all 0.5s ease-out;
 }
 
@@ -189,6 +188,29 @@ body {
     }
 }
 
+header h1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    z-index: 6;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25vw;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 800px) {
+    header h1 {
+        font-size: 1.5em; 
+    }
+}
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1em; 
+    }
+}
+
 #hamburger-id::after {
     background-color: white !important;
 }
@@ -210,26 +232,12 @@ body {
     flex-direction: column;
     align-items: center;
 }
-/* @media (max-width: 500px) {
-    .section-content{
-        padding-top: 8.5rem;
-    }
+.section-content-box{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    border: #000000 2px;
 }
-@media (min-width: 500px) {
-    .section-content{
-        padding-top: 7rem;
-    }
-}
-@media (min-width: 800px) {
-    .section-content{
-        padding-top: 5.6rem;
-    }
-}
-@media (min-width: 1200px) {
-    .section-content{
-        padding-top: 4.6rem;
-    }
-} */
 
 /***********About Me Section****************/
 #about-me {
@@ -242,4 +250,13 @@ body {
 /***********Contact Section****************/
 #contact {
 
+}
+/***********Footer****************/
+footer {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
