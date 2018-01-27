@@ -1,16 +1,21 @@
 /*********Responsive text typography*************/
 
 html {
-    font-size: 16px;
+    font-size: 1rem;
+}
+@media (max-width: 500px) {
+    html{
+        font-size: .8rem;
+    }
 }
 @media (min-width: 800px) {
     html{
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 }
 @media (min-width: 1200px) {
     html {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
 }
 h1 { 
@@ -36,10 +41,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.courier-font {
-    font-family: courier;
-}
-
 /******************Navbar********************/
 
 #navbar {
@@ -48,13 +49,51 @@ body {
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    height: auto;
     overflow: hidden !important;
+}
+
+.navbar-height{
+    height: 65px !important;
+}
+
+@media (max-width: 500px) {
+    .navbar-height{
+        height: 65px !important;
+    }
+}
+@media (min-width: 500px) {
+    .navbar-height{
+        height: 75px !important;
+    }
+}
+@media (min-width: 800px) {
+    .navbar-height{
+        height: 85px !important;
+    }
+}
+@media (min-width: 1200px) {
+    .navbar-height{
+        height: 95px !important;
+    }
+}
+#nav-ul{
+    margin: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+#nav-header{
+    margin-bottom: 0.5rem;
 }
 
 .luxbar-checkbox:checked, .luxbar-menu {
     overflow: hidden !important;
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.0));
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.0)) !important;
+    transition: all 0.5s ease-out;
+}
+
+
+.navbar-background-change {
+    background: black !important;
+    transition: all 0.5s ease-out;
 }
 
 .text-shadow {
@@ -64,12 +103,7 @@ body {
     text-decoration: dashed underline !important;
     color: #cd853f!important;
 }
-.brand:link{
 
-}
-.brand:visited {
-    color: #cd853f!important;
-}
 .brand:hover {
     color: #8b4513 !important;
     text-decoration: underline !important;
@@ -78,15 +112,24 @@ body {
     color: #c0c0c0 !important;
     text-decoration: underline !important;
 }
+.brand:active {
+    color: #cd853f!important;
+}
 
 
 .nav-link:hover {
     font-size: 105% !important;
+     
 }
 .nav-link:focus {
-    text-decoration: underline dashed !important; 
-    font-size: 105% !important;
+    font-size: 110% !important;
 }
+.nav-link-active {
+    background-color: #8b4513 !important;
+}
+
+
+
 
 /**************Color Pallette****************/
 .black-background {
@@ -154,7 +197,30 @@ body {
     background-color: white !important;
 }
 
-/* body {
-    background-color: #edf6f5;
-    z-index: 0;
-} */
+/***********About Me Section****************/
+#about-me {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/***********Portfolio Section****************/
+#portfolio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/***********Contact Section****************/
+#contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

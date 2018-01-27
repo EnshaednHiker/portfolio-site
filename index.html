@@ -6,7 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:100" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+    <link rel="stylesheet" href="assets/styles/luxbar.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/main.css" />
     <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
@@ -14,16 +14,16 @@
 <body>
     <div name="navbar" class="luxbar-fixed white-text" id="navbar">
         <input type="checkbox" id="luxbar-checkbox" class="luxbar-checkbox">
-        <div class="luxbar-menu luxbar-menu-right">
-            <ul id="" class="luxbar-navigation">
-                <li class="luxbar-header">
-                    <a class="luxbar-brand fjalla-one-font brand" href="#">Nick Bingham</a>
+        <div id="luxbar-div" class="luxbar-menu luxbar-menu-right">
+            <ul id="nav-ul" class="luxbar-navigation">
+                <li class="luxbar-header" id="nav-header">
+                    <a class="luxbar-brand fjalla-one-font brand" id="brand">Nick Bingham</a>
                     <label class="luxbar-hamburger luxbar-hamburger-spin"
                             for="luxbar-checkbox"> <span id="hamburger-id"></span> </label>
                 </li>
-                <li class="luxbar-item active font-shadow"><a class="nav-link" href="#">About me</a></li>
-                <li class="luxbar-item active font-shadow"><a class="nav-link" href="#">Portfolio</a></li>
-                <li class="luxbar-item active font-shadow"><a class="nav-link" href="#">Contact</a></li>
+                <li class="luxbar-item active font-shadow"><a class="nav-link" id="about-me-link" >About me</a></li>
+                <li class="luxbar-item active font-shadow"><a class="nav-link" id="portfolio-link">Portfolio</a></li>
+                <li class="luxbar-item active font-shadow"><a class="nav-link" id="contact-link">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -32,13 +32,16 @@
         <img id="background-image" alt="background image of blurred, diffuse street car" src="assets/images/background-image_320px.jpeg" srcset="assets/images/background-image_320px.jpeg 320w, assets/images/background-image_640px.jpeg 640w, assets/images/background-image_960px.jpeg 960w, assets/images/background-image_1180px.jpeg 1180w, assets/images/background-image_1500px.jpeg 1500w, assets/images/background-image_1920px.jpeg 1920w">
     </header>
     <section id="about-me">
-
+        <h1 class="fjalla-one-font">About me</h1>
+        <p>Content content content</p>
     </section>
     <section id="portfolio">
-
+        <h1 class="fjalla-one-font">Portfolio</h1>
+        <p>Content content content</p>
     </section>
     <section id="contact">
-
+        <h1 class="fjalla-one-font">Contact</h1>
+        <p>Content content content</p>
     </section>
     <footer>
     </footer>
