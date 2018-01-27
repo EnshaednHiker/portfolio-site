@@ -20,8 +20,16 @@ Reasonable load time. We'll discuss how to achieve this, but the page should loa
 */
 
 
+
 /*******************Navbar Event Listeners********************/
 
+//Sweet Scroll handles smooth scrolling transitions
+document.addEventListener('DOMContentLoaded', () => {
+    const options = {
+        offset: -95
+    }
+    const scroller = new SweetScroll(options);
+  }, false);
 //convenience function that clicks the close input on mobile view if the navbar is open
 function checkCheckbox(){
     if($( "input:checked" ).length===1){
@@ -36,31 +44,45 @@ function handleNavClass(e){
 
 //listener block that handles what happens when "About me" is clicked
 $('#about-me-link').click(function(e){
+    e.preventDefault()
     //close open navbar on mobile view
     checkCheckbox()
     //set proper nav link to active view
     handleNavClass(e);
     //smoothly scroll to that part of the page
-    document.querySelector('#about-me').scrollIntoView({ 
-        behavior: 'smooth' 
-      });
+    // document.querySelector('#about-me').scrollIntoView({ 
+    //     behavior: 'smooth',
+    //     alignToTop: true,
+    //     inline: "nearest" 
+    // });
+
+    // $('#about-me').smoothScroll(
+    // //     {
+    // //     offset: -100,
+    // //     beforeScroll: function(){console.log("did this fire?")}
+    // // }
+    //);
 });
 
 //listener block that handles what happens when "Portfolio" is clicked
 $('#portfolio-link').click(function(e){
     checkCheckbox();
     handleNavClass(e);
-    document.querySelector('#portfolio').scrollIntoView({ 
-        behavior: 'smooth' 
-      });
+    // document.querySelector('#portfolio').scrollIntoView({ 
+    //     behavior: 'smooth',
+    //     alignToTop: true,
+    //     inline: "nearest" 
+    //   });
 });
 //listener block that handles what happens when "Contact" is clicked
 $('#contact-link').click(function(e){
     checkCheckbox();
     handleNavClass(e);
-    document.querySelector('#contact').scrollIntoView({ 
-        behavior: 'smooth' 
-      });
+    // document.querySelector('#contact').scrollIntoView({ 
+    //     behavior: 'smooth',
+    //     alignToTop: true,
+    //     inline: "nearest" 
+    //   });
 });
 //listener block that handles what happens when "Nick Bingham" is clicked;
 $('#brand').click(function(){
