@@ -26,7 +26,7 @@ Reasonable load time. We'll discuss how to achieve this, but the page should loa
 //Sweet Scroll handles smooth scrolling transitions
 document.addEventListener('DOMContentLoaded', () => {
     const options = {
-        offset: -95
+        offset: -99
     }
     const scroller = new SweetScroll(options);
   }, false);
@@ -49,47 +49,22 @@ $('#about-me-link').click(function(e){
     checkCheckbox()
     //set proper nav link to active view
     handleNavClass(e);
-    //smoothly scroll to that part of the page
-    // document.querySelector('#about-me').scrollIntoView({ 
-    //     behavior: 'smooth',
-    //     alignToTop: true,
-    //     inline: "nearest" 
-    // });
-
-    // $('#about-me').smoothScroll(
-    // //     {
-    // //     offset: -100,
-    // //     beforeScroll: function(){console.log("did this fire?")}
-    // // }
-    //);
 });
 
 //listener block that handles what happens when "Portfolio" is clicked
 $('#portfolio-link').click(function(e){
     checkCheckbox();
     handleNavClass(e);
-    // document.querySelector('#portfolio').scrollIntoView({ 
-    //     behavior: 'smooth',
-    //     alignToTop: true,
-    //     inline: "nearest" 
-    //   });
 });
 //listener block that handles what happens when "Contact" is clicked
 $('#contact-link').click(function(e){
     checkCheckbox();
     handleNavClass(e);
-    // document.querySelector('#contact').scrollIntoView({ 
-    //     behavior: 'smooth',
-    //     alignToTop: true,
-    //     inline: "nearest" 
-    //   });
 });
 //listener block that handles what happens when "Nick Bingham" is clicked;
 $('#brand').click(function(){
     checkCheckbox();
     $('.nav-link').removeClass('nav-link-active');
-    $("html, body").animate({ scrollTop: 0 }, 600);
-    return false;
 });
 //Scroll listener which calculates when when to turn the navbar black right before scrolling past the header image 
 $(document).scroll(function(){
