@@ -22,24 +22,31 @@ Reasonable load time. We'll discuss how to achieve this, but the page should loa
 
 /*******************Navbar Event Listeners********************/
 
+//convenience function that clicks the close input on mobile view if the navbar is open
 function checkCheckbox(){
     if($( "input:checked" ).length===1){
         $(".luxbar-checkbox").click();
     }
 }
+//convenience function that adds an active class to nav link being click and removes that class from all links prior to adding it
 function handleNavClass(e){
     $('.nav-link').removeClass('nav-link-active');
     $(e.target).addClass('nav-link-active');
 }
 
+//listener block that handles what happens when "About me" is clicked
 $('#about-me-link').click(function(e){
+    //close open navbar on mobile view
     checkCheckbox()
+    //set proper nav link to active view
     handleNavClass(e);
+    //smoothly scroll to that part of the page
     document.querySelector('#about-me').scrollIntoView({ 
         behavior: 'smooth' 
       });
 });
 
+//listener block that handles what happens when "Portfolio" is clicked
 $('#portfolio-link').click(function(e){
     checkCheckbox();
     handleNavClass(e);
@@ -47,6 +54,7 @@ $('#portfolio-link').click(function(e){
         behavior: 'smooth' 
       });
 });
+//listener block that handles what happens when "Contact" is clicked
 $('#contact-link').click(function(e){
     checkCheckbox();
     handleNavClass(e);
@@ -54,31 +62,20 @@ $('#contact-link').click(function(e){
         behavior: 'smooth' 
       });
 });
+//listener block that handles what happens when "Nick Bingham" is clicked;
 $('#brand').click(function(){
     checkCheckbox();
     $('.nav-link').removeClass('nav-link-active');
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
 });
-
-//duplicate this code here and below so that this runs on page load and on scroll
-// var element = document.getElementById("background-image");
-// var navElement = document.getElementById("luxbar-div");
-// var height = element.scrollHeight;
-// var navHeight = navElement.scrollHeight;
-// if (height - navHeight < window.scrollY){
-//     $('#luxbar-div').addClass('navbar-background-change');
-// }
-// else{
-//     $('#luxbar-div').removeClass('navbar-background-change');
-// }
-
+//Scroll listener which calculates when when to turn the navbar black right before scrolling past the header image 
 $(document).scroll(function(){
     var element = document.getElementById("background-image");
-    var navElement = document.getElementById("navbar");
+    var navElement = document.getElementById("nav-header");
     var height = element.scrollHeight;
     var navHeight = navElement.scrollHeight;
-    if (height < window.scrollY){
+    if (height - navHeight < window.scrollY){
         $('#luxbar-div').addClass('navbar-background-change');
     }
     else{
@@ -86,6 +83,7 @@ $(document).scroll(function(){
     }
 });
 
+//function needed for adding when to change the navbar height to what's needed after and before the mobile navbar view is open
 function checkedClassHandling(){
     if($( "input:checked" ).length===0){
         $('#luxbar-div').addClass("navbar-height");
@@ -94,6 +92,7 @@ function checkedClassHandling(){
         $('#luxbar-div').removeClass("navbar-height");
     }
 }
+//When the navbar is clicked closed, add the right height class. When open, take away that class so it's height is 100%
 checkedClassHandling();
 $(".luxbar-checkbox").click(function(){
     checkedClassHandling();
