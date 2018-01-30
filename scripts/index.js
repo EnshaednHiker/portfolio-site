@@ -111,3 +111,30 @@ var options = {
   }
   
   var typed = new Typed("#typed-span", options);
+
+  /****************Owl Carousel***************/
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        margin:10,
+        center: true,
+        loop: true,
+        autoWidth: true,
+        autoHeight: true,
+        nav: false,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:1,
+                nav:true
+            },
+            1000:{
+                items: 1,
+                nav: true
+            }
+        }
+    });
+  });

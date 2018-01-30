@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:100,300" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/luxbar.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/styles/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/main.css" />
-    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="scripts/sweet-scroll.min.js"></script>
     <script type="text/javascript" src="scripts/typed.min.js"></script>
 </head>
@@ -43,26 +44,58 @@
     </header>
     <section class="section">
         <div class="section-content">    
-            <h1 id="about-me" class="fjalla-one-font black-text">About me</h1>
-            <div class="section-content-box">
-
+            <h2 id="about-me" class="fjalla-one-font black-text">About me</h2>
+            <div class="border section-content-width flex column-direction align-center justify-center">
+                <p id="about-me-paragraph" class="montserrat-300-font">
+                    Hey-o,<br><br> I'm Nick Bingham. I'm a web developer and a <a class="orange-text" href="https://www.thinkful.com/outcomes/" target="_blank">Thinkful</a> flex fullstack bootcamp grad. I'm adept at using React/<wbr>Redux on the frontend, MongoDB/<wbr>Mongoose/<wbr>Express/<wbr>Node on the backend, ES6 + ES7 for more sane syntax, Webpack for intelligent bundling and transpiling, and CircleCI/<wbr>github/<wbr>commandline git for CI and version control. I've done IoT projects and love getting gritty with data. I bring 6+ years of legal industry business development and have all kinds of soft skills.<br><br>Let's talk.  
+                </p>
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="section-content">
-            <h1 id="portfolio" class="fjalla-one-font black-text">Portfolio</h1>
-        <div>
-    </section>
+    <section name="portfolio">
+        <h2 id="portfolio" class="fjalla-one-font black-text text-center">Portfolio</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="portfolio-width">
+                <h3 class="text-center">Find Your Happy Place</h3>
+                <div class="flex column-direction align-center justify-center">
+                    <img src="assets/images/fyhp.png" alt="Find Your Happy Place website screenshot">
+                    <p class="text-center">An API mashup app that combines Google Maps API V3 and Yahoo Weather to filter locations by weather and temperature based on a 10-day forecast.</p>
+                        <span class="text-center portfolio-links" ><a class="orange-text" href="https://github.com/EnshaednHiker/find-your-happy-place" target="_blank">Github</a> | <a class="orange-text" href="https://enshaednhiker.github.io/find-your-happy-place/" target="_blank">Live</a></span>
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-width">
+                <h3 class="text-center">Tessellated Security</h3>
+                <div class="flex column-direction align-center justify-center">
+                    <img src="assets/images/fyhp.png" alt="Find Your Happy Place website screenshot">
+                    <p class="text-center">An API mashup app that combines Google Maps API V3 and Yahoo Weather to filter locations by weather and temperature based on a 10-day forecast.</p>
+                        <span class="text-center portfolio-links" ><a class="orange-text" href="https://github.com/EnshaednHiker/find-your-happy-place" target="_blank">Github</a> | <a class="orange-text" href="https://enshaednhiker.github.io/find-your-happy-place/" target="_blank">Live</a></span>
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-width">
+                <h3 class="text-center">Context</h3>
+                <div class="flex column-direction align-center justify-center">
+                    <img src="assets/images/fyhp.png" alt="Find Your Happy Place website screenshot">
+                    <p class="text-center">An API mashup app that combines Google Maps API V3 and Yahoo Weather to filter locations by weather and temperature based on a 10-day forecast.</p>
+                        <span class="text-center portfolio-links" ><a class="orange-text" href="https://github.com/EnshaednHiker/find-your-happy-place" target="_blank">Github</a> | <a class="orange-text" href="https://enshaednhiker.github.io/find-your-happy-place/" target="_blank">Live</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <section>
     <section class="section">
         <div class="section-content">    
-            <h1 id="contact" class="fjalla-one-font black-text">Contact</h1>
+            <h2 id="contact" class="fjalla-one-font black-text">Contact</h2>
+            <div class="section-content-box">
+            </div>
         <div>
     </section>
     <footer class="black-background">
         <p class="white-text">© Nick Bingham 2018</p>
     </footer>
-
+    <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 </html>
