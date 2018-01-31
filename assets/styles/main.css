@@ -225,7 +225,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 @media only screen and (max-width: 1000px) {
     .section{
@@ -316,6 +316,12 @@ header h1 {
 .align-center{
     align-content: center;
 }
+.row-direction{
+    flex-direction: row;
+}
+.justify-around{
+    justify-content: space-around;
+}
 
 /***********About Me Section****************/
 
@@ -331,9 +337,7 @@ header h1 {
 }
 
 /***********Portfolio Section****************/
-#portfolio {
-    margin-bottom: 0px;
-}
+
 .portfolio-links a {
     text-decoration: none;
 }
@@ -371,8 +375,42 @@ header h1 {
 }
 
 /***********Contact Section****************/
-#contact {
+.mbt5 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.m25{
+    margin: 2.5rem;
+}
+.mt25{
+    margin-top: 2.5rem;
+}
+.mb25{
+    margin-bottom: 2.5rem;
+}
+.mt1{
+    margin-top:1rem
+}
+.mr05{
+    margin-right: 0.5rem;
+}
+.ml05{
+    margin-left: 0.5rem;
+}
 
+i {
+    color:#8b4513 
+}
+i:hover {
+    color:#000000
+}
+#email{
+    color:#8b4513;
+    text-decoration: none;
+}
+#email:hover{
+    color:#000000;
+    text-decoration: underline;
 }
 /***********Footer****************/
 footer {

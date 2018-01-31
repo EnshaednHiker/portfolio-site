@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/styles/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/main.css" />
     <script type="text/javascript" src="scripts/sweet-scroll.min.js"></script>
     <script type="text/javascript" src="scripts/typed.min.js"></script>
@@ -43,7 +44,7 @@
         <h1 class="white-text text-shadow">I'm a web developer who loves:<br>&lt/ <span id="typed-span"></span> &gt</h1>
     </header>
     <section class="section">
-        <div class="section-content">    
+        <div class="section-content-width flex column-direction align-center justify-center">    
             <h2 id="about-me" class="fjalla-one-font black-text">About me</h2>
             <div class="border section-content-width flex column-direction align-center justify-center">
                 <p id="about-me-paragraph" class="montserrat-300-font">
@@ -53,13 +54,13 @@
         </div>
     </section>
     <section name="portfolio">
-        <h2 id="portfolio" class="fjalla-one-font black-text text-center">Portfolio</h2>
+        <h2  class="fjalla-one-font black-text text-center">Portfolio</h2>
         <div class="owl-carousel owl-theme">
             <div class="portfolio-width">
-                <h3 class="text-center">Find Your Happy Place</h3>
+                <h3 id="portfolio" class="text-center">Find Your Happy Place</h3>
                 <div class="flex column-direction align-center justify-center">
                     <img src="assets/images/fyhp.png" alt="Find Your Happy Place website screenshot">
-                    <p class="text-center">An API mashup app that combines Google Maps API V3 and Yahoo Weather to filter locations by weather and temperature based on a 10-day forecast. Perfect weather + cool spots = happiness.</p>
+                    <p class="text-center">Find Your Happy Place is an API mashup app that combines Google Maps and Yahoo Weather to rank locations by weather and temperature using a 10-day forecast. Perfect weather + cool spots = happiness. <b>Tech used: HTML5/<wbr>CSS3/<wbr>Yahoo Weather/<wbr>Google Maps.</b></p>
                         <span class="text-center portfolio-links" ><a class="orange-text" href="https://github.com/EnshaednHiker/find-your-happy-place" target="_blank">Github</a> | <a class="orange-text" href="https://enshaednhiker.github.io/find-your-happy-place/" target="_blank">Live</a></span>
                     </p>
                 </div>
@@ -68,7 +69,7 @@
                 <h3 class="text-center">Tessellated Security</h3>
                 <div class="flex column-direction align-center justify-center">
                     <img src="assets/images/tessellated-security.png" alt="Find Your Happy Place website screenshot">
-                    <p class="text-center">An API mashup app that combines Google Maps API V3 and Yahoo Weather to filter locations by weather and temperature based on a 10-day forecast.</p>
+                    <p class="text-center">Tessellated Security is an IoT project and end-to-end service that allows you to take a tessel 2 and a magnetic switch to build your own security system. <b>Tech used: HTML5/<wbr>CSS3/<wbr>MongoDB/<wbr>Express/<wbr>Node/<wbr>Chai/<wbr>Mocha/<wbr>Mongoose/<wbr>Webpack/<wbr>Tessel.</b></p>
                         <span class="text-center portfolio-links" ><a class="orange-text" href="https://github.com/EnshaednHiker/tessellated-security" target="_blank">Github</a> | <a class="orange-text" href="https://enshaednhiker.github.io/tessellated-security-webclient/#/" target="_blank">Live</a></span>
                     </p>
                 </div>
@@ -77,19 +78,23 @@
                 <h3 class="text-center">Context</h3>
                 <div class="flex column-direction align-center justify-center">
                     <img src="assets/images/context.png" alt="Find Your Happy Place website screenshot">
-                    <p class="text-center">An API mashup app that combines Google Maps API V3 and Yahoo Weather to filter locations by weather and temperature based on a 10-day forecast.</p>
+                    <p class="text-center">Context is a responsive, full-stack app that allows users to annotate a text's named entities with a summary and external websites. Make sense of science articles with ease. <b>Tech used: React/<wbr>Redux/<wbr>HTML5/<wbr>CSS3/<wbr>MongoDB/<wbr>Express/<wbr>Mongoose/<wbr>Node/<wbr>Webpack/<wbr>DBPedia Spotlight API.</b></p>
                         <span class="text-center portfolio-links" ><a class="orange-text" href="https://github.com/EnshaednHiker/context" target="_blank">Github</a> | <a class="orange-text" href="http://contextservice.site/#/" target="_blank">Live</a></span>
                     </p>
                 </div>
             </div>
         </div>
     <section>
-    <section class="section">
-        <div class="section-content">    
-            <h2 id="contact" class="fjalla-one-font black-text">Contact</h2>
-            <div class="section-content-box">
+    <section class="mbt5 section-content-width flex column-direction align-center justify-center" id="contact-section">  
+        <h2 id="contact" class="fjalla-one-font black-text">Contact</h2>
+        <div class="m25 montserrat-300-font border section-content-width flex column-direction align-center justify-center">
+            <h3 class="mt25">Let's talk. I'm listening.</h3>
+            <a  href="mailto:nbingham09@gmail.com" target="_blank" id="email">nbingham09@gmail.com</a>
+            <div class="mb25 mt1 flex row-direction justify-around">
+                <a target="_blank" href="https://github.com/EnshaednHiker" class="mr05"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/nicholas-bingham-a0696326" class="ml05"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
             </div>
-        <div>
+        </div>
     </section>
     <footer class="black-background">
         <p class="white-text">© Nick Bingham 2018</p>
