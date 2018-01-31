@@ -2,7 +2,7 @@
 
 What can I say? This portfolio and it's contained projects represents a year of my life. I had a lot of fun and stress and late nights putting together my projects.  This portfolio comes at the end of my journey with the Thinkful flex bootcamp, but it's by no means the end of my learning. That is just beginning.
 
-Live portfolio site: [www.nickbingham.com](www.nickbingham.com)
+Live portfolio site: [https://enshaednhiker.github.io/portfolio-site/](https://enshaednhiker.github.io/portfolio-site/)
 
 ## Getting Started
 
