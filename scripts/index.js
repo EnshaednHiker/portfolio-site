@@ -92,7 +92,7 @@ var options = {
   /****************Owl Carousel***************/
   $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        margin:10,
+        margin:80,
         center: true,
         loop: true,
         autoWidth: true,
