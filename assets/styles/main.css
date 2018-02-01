@@ -327,6 +327,7 @@ header h1 {
 
 #about-me-paragraph{
     margin: 1.5rem;
+    font: 120%;
 }
 
 #about-me-paragraph a {
